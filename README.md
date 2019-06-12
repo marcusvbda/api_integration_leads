@@ -13,7 +13,7 @@ http://leads.ezcore.com.br/api/unimar_integration/get/auth?client_id={client_id}
 Para esta requisição, os seguintes parâmetros são necessários:
 - Client ID
 - Secret Key
-**Solicite estes dados de integração ao administrador da API, através do email vinicius@ezcore.com.br.*
+**Solicite estes dados de integração ao administrador da API, através do email vinicius.bda@icloud.com.*
 
 A resposta da requisição é apresentada em formato JSON, trazendo as seguintes informações:
 - **Success**: True, quando as informações foram corretamente autenticadas/ False, quando houver alguma irregularidade na requisição.
@@ -163,4 +163,4 @@ Veja um exemplo de resposta de requisição desta etapa:
 - Todas as requisições desta API devem utilizar o método GET.
 - Todos os responses desta API são disponibilizados em formato JSON.
 
-#####  Em caso de dúvidas, sugestões ou correções, contate o desenvolvedor através do email vinicius@ezcore.com.br ou telefone (14)99676-6177.
+#####  Em caso de dúvidas, sugestões ou correções, contate o desenvolvedor através do email vinicius.bda@icloud.com.br ou telefone (14)99676-6177.
