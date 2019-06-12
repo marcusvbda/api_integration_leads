@@ -39,7 +39,7 @@ Veja o exemplo:
 
  A captura de Leads deve ser realizada por meio de uma nova requisição GET, utilizando a seguinte rota : 
  
- http://leads.ezcore.com.br/api/unimar_integration/get/leads?token={token}&status=sem-agendamento&create_date_start={AAAA-MM-DD}&create_date_end={AAAA-MM-DD}&update_date_start={AAAA-MM-DD}&update_date_end={AAAA-MM-DD}&tags={tags_separadas_por_virgula}&ref_token={tokens_de_referência_de_lead_separados_por_virgula}&page=1
+ http://leads.ezcore.com.br/api/unimar_integration/get/leads?token={token}&status=sem-agendamento&create_date_start={AAAA-MM-DD}&create_date_end={AAAA-MM-DD}&update_date_start={AAAA-MM-DD}&update_date_end={AAAA-MM-DD}&tags={tags_separadas_por_virgula}&ref_token={tokens_de_referência_de_lead_separados_por_virgula}&page={page}
  
 ##### Os Parâmetros
  Todos os parâmetros desta requisição são separados por um &. São eles: 
