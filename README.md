@@ -1,6 +1,6 @@
-# API DE INTEGRAÇÃO DE LEADS - EZCORE LEADS E ORION ERP
+# API DE INTEGRAÇÃO DE LEADS - EZCORE LEADS
 
-Esta API foi desenvolvida exclusivamente para integração entre os sistemas EZCore Leads e Orion ERP. Trata-se de uma API que permite a transferência de informações de leads, bem como seus históricos, de forma segura e rápida.
+Esta API foi desenvolvida com intuito de integrar a ezcore leads com demais ferramentas. Trata-se de uma API que permite a transferência de informações de leads, bem como seus históricos, de forma segura e rápida.
 
 Veja como funciona essa integração!
 
@@ -8,7 +8,7 @@ Veja como funciona essa integração!
 ###  ETAPA 1 - Autenticação de Integração
 O início desta integração requer a realização de uma requisição GET, do tipo HTTP, utilizando a rota abaixo:
 
-http://leads.ezcore.com.br/api/unimar_integration/get/auth?client_id={client_id}&secret_key={secret}.
+http://leads.ezcore.com.br/api/integration/get/auth?client_id={client_id}&secret_key={secret}.
 
 Para esta requisição, os seguintes parâmetros são necessários:
 - Client ID
@@ -39,7 +39,7 @@ Veja o exemplo:
 
  A captura de Leads deve ser realizada por meio de uma nova requisição GET, utilizando a seguinte rota : 
  
- http://leads.ezcore.com.br/api/unimar_integration/get/leads?token={token}&status=sem-agendamento&create_date_start={AAAA-MM-DD}&create_date_end={AAAA-MM-DD}&update_date_start={AAAA-MM-DD}&update_date_end={AAAA-MM-DD}&tags={tags_separadas_por_virgula}&ref_token={tokens_de_referência_de_lead_separados_por_virgula}&page={page}
+ http://leads.ezcore.com.br/api/integration/get/leads?token={token}&status=sem-agendamento&create_date_start={AAAA-MM-DD}&create_date_end={AAAA-MM-DD}&update_date_start={AAAA-MM-DD}&update_date_end={AAAA-MM-DD}&tags={tags_separadas_por_virgula}&ref_token={tokens_de_referência_de_lead_separados_por_virgula}&page={page}
  
 ##### Os Parâmetros
  Todos os parâmetros desta requisição são separados por um &. São eles: 
@@ -142,10 +142,10 @@ Veja um exemplo de resposta de requisição desta etapa:
         }
       }
     ],
-    "first_page_url": "http://leads.ezcore.com.br/api/unimar_integration/get/leads?page=1",
+    "first_page_url": "http://leads.ezcore.com.br/api/integration/get/leads?page=1",
     "from": 1,
     "last_page": 1,
-    "last_page_url": "http://leads.ezcore.com.br/api/unimar_integration/get/leads?page=1",
+    "last_page_url": "http://leads.ezcore.com.br/api/integration/get/leads?page=1",
     "next_page_url": null,
     "path": "http://leads.ezcore.com.br/api/unimar_integration/get/leads",
     "per_page": 20,
@@ -155,7 +155,7 @@ Veja um exemplo de resposta de requisição desta etapa:
   }
 }
 ```
-**Para esta etapa, somente o parâmetro token é OBRIGATOÓRIO, os demais são opcionais e, se preenchidos, retornam uma busca mais refinada.*
+**Para esta etapa, somente o parâmetro token é OBRIGATÓRIO, os demais são opcionais e, se preenchidos, retornam uma busca mais refinada.*
 
 
 ### Informações Complementares
